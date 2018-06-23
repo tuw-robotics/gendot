@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>gendot</name>
+  <version>0.0.0</version>
+  <description>dot GraphViz ROS message and service generators.</description>
+  <maintainer email="markus.bader@tuwien.ac.at">Markus Bader</maintainer>
+  <license>BSD</license>
+
+  <author>Markus Bader</author>
+
+  <buildtool_depend version_gte="0.5.78">catkin</buildtool_depend>
+
+  <build_depend>genmsg</build_depend>
+
+  <run_depend>genmsg</run_depend>
+
+  <export>
+    <message_generator>dot</message_generator>
+    <rosdoc config="rosdoc.yaml"/>
+    <architecture_independent/>
+  </export>
+</package>
